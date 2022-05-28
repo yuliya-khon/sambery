@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <title>О компании</title>
+</head>
+<body>
+    <header class="container-fluid flex pt-3"> <!------------------------------Шапка--------------------------------->
+        <div class="d-flex row">
+            <div class="col-3">
+                <div>
+                   <a href="main.html"><img class="logo" src="./img/logo.jpg" alt="logo"></a> 
+                </div>
+            </div>
+            <div class="col-6 mr-auto d-flex justify-content-between align-items-center ">
+                <div>
+                    <svg class="catalog" fill="#40A53C" stroke="white" width="48" height="48" viewBox="0 0 48 48"  xmlns="http://www.w3.org/2000/svg">
+                        <rect width="48" height="50" rx="10" />
+                        <path d="M33 22H15"   stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M33 18H15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M33 26H15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M33 30H15"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                          
+                </div>
+                <div class="input-group m-3">
+                    <input type="text" class="form-control border border-secondary search" placeholder="Поиск среди 1 000 000 товаров..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn btn-outline-success green"type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg></button>
+                </div>
+            </div>
+            <div class="col-3 align-items-center d-flex justify-content-evenly">
+                <div>
+                    <svg class="icon" stroke="black" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.3134 5.37833C23.7175 4.78217 23.01 4.30925 22.2313 3.98659C21.4526 3.66394 20.618 3.49786 19.7751 3.49786C18.9322 3.49786 18.0975 3.66394 17.3188 3.98659C16.5401 4.30925 15.8326 4.78217 15.2367 5.37833L14.0001 6.61499L12.7634 5.37833C11.5597 4.17469 9.92726 3.49849 8.22506 3.49849C6.52285 3.49849 4.89036 4.17469 3.68672 5.37833C2.48308 6.58197 1.80688 8.21445 1.80688 9.91666C1.80688 11.6189 2.48308 13.2514 3.68672 14.455L4.92339 15.6917L14.0001 24.7683L23.0767 15.6917L24.3134 14.455C24.9096 13.8591 25.3825 13.1516 25.7051 12.3729C26.0278 11.5942 26.1939 10.7596 26.1939 9.91666C26.1939 9.07376 26.0278 8.23911 25.7051 7.46041C25.3825 6.68171 24.9096 5.97421 24.3134 5.37833V5.37833Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </div>
+                <div>
+                    <svg class="icon" stroke="black" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path  d="M7 2.33331L3.5 6.99998V23.3333C3.5 23.9522 3.74583 24.5456 4.18342 24.9832C4.621 25.4208 5.21449 25.6666 5.83333 25.6666H22.1667C22.7855 25.6666 23.379 25.4208 23.8166 24.9832C24.2542 24.5456 24.5 23.9522 24.5 23.3333V6.99998L21 2.33331H7Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.5 7H24.5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.6666 11.6667C18.6666 12.9044 18.1749 14.0913 17.2998 14.9665C16.4246 15.8417 15.2376 16.3334 13.9999 16.3334C12.7622 16.3334 11.5753 15.8417 10.7001 14.9665C9.82492 14.0913 9.33325 12.9044 9.33325 11.6667" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>        
+                </div>
+                <div>
+                    <svg class="icon" stroke="black" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.3334 23.3333V21C23.3334 19.7623 22.8417 18.5753 21.9666 17.7001C21.0914 16.825 19.9044 16.3333 18.6667 16.3333H9.33341C8.09574 16.3333 6.90875 16.825 6.03358 17.7001C5.15841 18.5753 4.66675 19.7623 4.66675 21V23.3333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13.9999 11.6666C16.5772 11.6666 18.6666 9.57731 18.6666 6.99998C18.6666 4.42265 16.5772 2.33331 13.9999 2.33331C11.4226 2.33331 9.33325 4.42265 9.33325 6.99998C9.33325 9.57731 11.4226 11.6666 13.9999 11.6666Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>        
+                </div>
+                <div>
+                    <svg class="icon" stroke="black" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24.5 11.6667C24.5 19.8334 14 26.8334 14 26.8334C14 26.8334 3.5 19.8334 3.5 11.6667C3.5 8.88191 4.60625 6.2112 6.57538 4.24207C8.54451 2.27293 11.2152 1.16669 14 1.16669C16.7848 1.16669 19.4555 2.27293 21.4246 4.24207C23.3938 6.2112 24.5 8.88191 24.5 11.6667Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 15.1667C15.933 15.1667 17.5 13.5997 17.5 11.6667C17.5 9.73369 15.933 8.16669 14 8.16669C12.067 8.16669 10.5 9.73369 10.5 11.6667C10.5 13.5997 12.067 15.1667 14 15.1667Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>    
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <div class="collapse navbar-collapse d-flex justify-content-evenly" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Акции</a>
+                          </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Подарочные сертификаты</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">О нас</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты и адреса</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Доставка</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row mb-5"> <!------------------------------Наша география--------------------------------->
+                <h1 id="our-geog" class="px-2"><strong>Наша география</strong></h1>
+                <div class="col fs-4 px-2">
+                    <p>Самбери – крупнейшая на Дальнем Востоке сеть гипермаркетов, которая обеспечивает рынок 
+                        услугами розничной торговли, снабжает территорию товарами категории FMCG, производит 
+                        продукты питания, отвечая покупательскому спросу всех целевых аудиторий.</p>
+                    <p>Более 16-ти лет назад в Хабаровске был открыт первый на Дальнем Востоке гипермаркет 
+                        «Самбери» в формате дискаунтер.</p>
+                    <p>Сегодня Самбери – это 30 гипермаркетов, расположенных в 9-ти городах Дальнего Востока: Хабаровске, Владивостоке, Комсомольске-на-Амуре, Уссурийске, Биробиджане, Находке, Фокино, Благовещенске и Белогорске. 
+                        В планах компании – дальнейшее развитие сети в регионе.</p>
+                </div>
+
+                <div class="col">
+                    <img src="./img/about-us/1.png" alt="">
+                </div>
+            </div>
+
+            <div class="row mb-5"> <!------------------------------Наши торговые точки--------------------------------->
+                <h1 id="our-mark" class="px-2"><strong>Наши торговые точки</strong></h1>
+                <script type="text/javascript" class="row mb-5" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae0dda420d1495623839fde78fc82953e5130d3788dd9b7a7075a61be1fe305f9&amp;width=100%25&amp;height=549&amp;lang=ru_RU&amp;scroll=true"></script>
+            </div>
+
+            <div class="row mb-5"> <!------------------------------Собственное производство--------------------------------->      
+                <h1 class="px-2"><strong>Собственное производство</strong></h1>
+                <p class="fs-4">
+                    Кроме продажи продуктов и товаров разных компаний мы производим собственную продукцию. Собственное производство дает возможность контролировать качество продукции на всех этапах производственного цикла, а также обеспечивать лучшее соотношение «цена/качество» на полке.
+                    Заглянув на наши полки, Вы сможете увидеть: 
+                </p>
+
+                <ul class="px-5">
+                    <li class="fs-4 mb-2">
+                        кондитерские изделия;
+                    </li>
+
+                    <li class="fs-4 mb-2">
+                        различные блюда и салаты;
+                    </li>
+
+                    <li class="fs-4 mb-2">
+                        сыры;
+                    </li>
+
+                    <li class="fs-4 mb-2">
+                        охлажденное мясо и мясные полуфабрикаты, фарши, птицу и рыбу.
+                    </li>
+                </ul>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/2.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Кондитерская</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/3.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Сами готовим</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/4.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Пекарня</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/5.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Сами лепим</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/6.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Суши здесь!</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/7.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Пицца здесь!</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/8.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Плов здесь!</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/9.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Бургеры - Огонь!</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/10.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Сыроварня</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/11.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Мясной дворик</a></h6>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row mb-5"> <!------------------------------Собственная торговая марка--------------------------------->      
+                <h1 class="px-2"><strong>Собственная торговая марка</strong></h1>
+                <p class="fs-4">
+                    Мы внимательно изучаем тенденции рынка, чтобы быть в курсе последних трендов и 
+                    своевременно предлагать аналогичные решения под собственными брендами по привычному 
+                    качеству и по более привлекательной цене.
+                </p>
+
+                <p class="fs-4 mb-3">
+                    Приобретая продукцию под собственными торговыми марками, вы можете быть уверены в том, 
+                    что покупка будет неизменно выгодной и качественной!
+                </p>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/12.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Тропинки</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/13.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">ORS’O</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/14.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">EMI</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/15.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Seiyo</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/16.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">iLO</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 .col-sm-6">
+                    <div class="mark-card">
+                        <div class="mark-thumb">
+                            <a href="#"><img src="./img/about-us/17.png" class="rounded" alt=""></a>                                                            
+                        </div>
+                        <div class="mark-name mt-5">
+                            <h6><a class="text-center mt-3" href="#">Nina Home</a></h6>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                
+            <div class="row mb-5"> <!------------------------------О группе компаний “Невада”--------------------------------->      
+                <h1 class="px-2"><strong>О группе компаний “Невада”</strong></h1>
+                <p class="fs-4 mb-3">
+                    Эником Невада групп – это крупнейший дистрибьютор продуктов питания на Дальнем Востоке.
+                    Уже 27 лет компания Эником сотрудничает с российскими и мировыми лидерами FMCG рынка и
+                    обслуживает более 19 000 торговых точек Дальнего Востока. Филиалы Эником присутствуют в
+                    каждом регионе Дальнего Востока и покрывают населенные пункты с численностью около 75% от
+                    всего федерального округа.
+                </p>
+
+                <img src="./img/about-us/18.jpg" class="mb-3 " alt="">
+
+                <p class="fs-4">
+                    Эником Невада групп – это крупнейший дистрибьютор продуктов питания на Дальнем Востоке.
+                    Уже 27 лет компания Эником сотрудничает с российскими и мировыми лидерами FMCG рынка и
+                    обслуживает более 19 000 торговых точек Дальнего Востока. Филиалы Эником присутствуют в
+                    каждом регионе Дальнего Востока и покрывают населенные пункты с численностью около 75% от
+                    всего федерального округа.
+                </p>
+
+        </div>
+    </main>
+
+    <footer>        <!----------------------------Футер---------------------------------->
+        <div class="container-fluid">
+            <footer class="row row-cols-5 py-5 mt shadow p-3 bg-white rounded ">
+                <div class="col-2"></div>
+                <div class="col">
+                        <h4 class="mb-4">О КОМПАНИИ</h4>
+                        <ul class = "nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Наша география</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Наши торговые точки</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Своя продукция</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Своя торговоя марка</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">О группе компаний "Невада"</a>
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="col">
+                        <h4 class="mb-4">ПОКУПАТЕЛЯМ</h4>
+                        <ul class = "nav flex-column">
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Способы оплаты</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Доставка</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Возврат</a>
+                            </li>
+
+                            <li class="nav-item mb-2">
+                                <a href="#" class="nav-link p-0 text-muted">Отзывы покупателей</a>
+                            </li>
+                        </ul>
+                </div>
+
+                    <div class="col-3">
+                        <div>
+                            <a href="main.html"><img class="logo" src="./img/logo.jpg" alt="logo"></a>
+                            <p class="text-mutes pleft">Телефон call-центра: +7 (4212) 47-56-76
+                                Эл.почта: shop@samberi.com</p>
+                        </div>
+                    </div>
+            </footer>
+        </div>
+    </footer>
+    
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
